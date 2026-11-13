@@ -1,0 +1,470 @@
+<!--
+  ======================================================================
+  INSTITUCIÓN: CBTis 166 Pablo Torres Burgos
+  ----------------------------------------------------------------------
+  * Estudiante: Gaona Castro Eduardo Baltazar
+  * Grupo: 3B PRO VESP  
+  * Actividad: Portal Institucional (Con barra superior, collage y formulario)
+  ====================================================================== -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Investigación Monarch - Portal Godzilla</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- BARRA SUPERIOR DE CONTACTO -->
+    <div class="top-bar" id="inicio">
+        <div class="top-bar-container">
+            <div class="top-contacts">
+                <span class="top-item">📞 555 MONARCH</span>
+                <span class="top-item whatsapp">💬 Canal de Emergencia <strong>Monarch</strong></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- BARRA DE NAVEGACIÓN PRINCIPAL -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#inicio">
+                    <img src="img/logo.png" alt="Monarch Logo" class="brand-logo-img">
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#oferta">Especialidades Titán</a>
+                <a href="#multimedia">Multimedia y Mapa</a>
+                <a href="login.html" class="btn-nav-login">Personal Autorizado</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN DE DOS COLUMNAS CON COLLAGE DE IMÁGENES -->
+    <section class="hero-section">
+        <div class="hero-container">
+            
+            <!-- Columna Izquierda: Textos, Botón y Beneficios -->
+            <div class="hero-text-side">
+                <span class="hero-tag">¡ALERTA DE TITÁN ACTIVO!</span>
+                <h1>Defensa Global y Monitoreo de Titanes con Validez Monarch</h1>
+                <p>Estudia el comportamiento de las criaturas alfa, protocolos de evacuación, ciberdefensa anti-Kaiju y análisis radioactivo en el centro avanzado de investigación global.</p>
+                
+                <div class="hero-cta-box">
+                    <a href="login.html" class="btn-orange">Solicita informes →</a>
+                    <div class="hero-benefits">
+                        <span>✓ Certificación directa sin costo</span>
+                        <span>✓ Protocolos de seguridad avanzados</span>
+                        <span>✓ Prácticas en laboratorios de contención</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Collage de Imágenes -->
+            <div class="hero-image-side">
+                <div class="image-collage">
+                    <div class="collage-main">
+                        <img src="img/godzilla.jpg" alt="Godzilla Titán">
+                    </div>
+                    <div class="collage-sub">
+                        <img src="img/monarch.jpg" alt="Laboratorio Monarch">
+                        <img src="img/radar.jpg" alt="Monitoreo Radar">
+                        <!-- GIF integrado de forma limpia y no estorbosa -->
+                        <img src="https://media1.tenor.com/m/7VzgZE0WW88AAAAd/sealyx-godzilla.gif" alt="Animación Godzilla GIF" class="collage-gif">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE OFERTA EDUCATIVA CON IMÁGENES ALUSIVAS -->
+    <section id="oferta" class="careers-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Nuestras 4 Especialidades en Titanes</h2>
+                <p>Elige tu área de estudio y prepárate para la defensa y estudio de los Kaijus</p>
+            </div>
+
+            <div class="careers-grid">
+                
+                <!-- Carrera 1: Recursos Humanos -->
+                <div class="career-card">
+                    <div class="career-img-container">
+                        <img src="img/img1.jpg" alt="Contención de Titanes">
+                    </div>
+                    <div class="career-content">
+                        <h3>Ingeniería en Contención de Titanes</h3>
+                        <p>Diseña barreras de contención, protocolos de evacuación masiva y gestión de crisis ante apariciones alfa.</p>
+                    </div>
+                </div>
+
+                <!-- Carrera 2: Programación -->
+                <div class="career-card">
+                    <div class="career-img-container">
+                        <img src="img/img2.jpg" alt="Radares Anti-Kaiju">
+                    </div>
+                    <div class="career-content">
+                        <h3>Sistemas de Alerta Precoz y Radares Anti-Kaiju</h3>
+                        <p>Desarrolla software de rastreo sísmico, algoritmos de predicción de rutas y sistemas de comunicación para Monarch.</p>
+                    </div>
+                </div>
+
+                <!-- Carrera 3: Ciberseguridad -->
+                <div class="career-card">
+                    <div class="career-img-container">
+                        <img src="img/img3.png" alt="Ciberdefensa Kaiju">
+                    </div>
+                    <div class="career-content">
+                        <h3>Ciberdefensa contra Amenazas Gigantes</h3>
+                        <p>Protege las redes globales de Monarch, previene ataques cibernéticos y asegura bases de datos secretas sobre los Titanes.</p>
+                    </div>
+                </div>
+
+                <!-- Carrera 4: Laboratorista Clínico -->
+                <div class="career-card">
+                    <div class="career-img-container">
+                        <img src="img/img4.png" alt="Biología de Radiación">
+                    </div>
+                    <div class="career-content">
+                        <h3>Biología de Radiación y Análisis Celular de Kaijus</h3>
+                        <p>Domina técnicas de análisis de energía atómica, muestras de tejido de Godzilla y estudio biológico de la radiación.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN MULTIMEDIA (MAPA, AUDIO, VIDEOS) -->
+    <section id="multimedia" class="multimedia-section" style="padding: 40px 20px; background: #f9f9f9;">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Centro Multimedia y Ubicación Monarch</h2>
+                <p>Explora la ubicación satelital, escucha registros de audio y visualiza contenido multimedia sobre Godzilla</p>
+            </div>
+            
+            <div class="multimedia-grid" style="display: flex; flex-direction: column; gap: 30px; margin-top: 20px;">
+                <!-- Google Maps Container -->
+                <div class="map-container">
+                    <h3>Ubicación Base Monarch (Estación de Monitoreo)</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60227.420454741405!2d-99.24762865136718!3d19.359894000000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffc0fb0867db%3A0xda92125e6bd01141!2sSr.%20Godzilla%20-%20Coyoac%C3%A1n!5e0!3m2!1ses!2smx!4v1794502084626!5m2!1ses!2smx" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <!-- Audio Local -->
+                <div class="audio-container">
+                    <h3>Registro de Audio: Rugido de Godzilla</h3>
+                    <audio controls src="audio/proyectado.mp3" style="width: 100%;">Tu navegador no soporta el elemento de audio.</audio>
+                </div>
+
+                <!-- Videos (YouTube y Local) -->
+                <div class="video-row" style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <h3>Documental / Tráiler (YouTube)</h3>
+                        <iframe width="100%" height="280" src="https://www.youtube.com/embed/kw0YhiqOPFg?si=KBew8ogH3528C40l" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div style="flex: 1; min-width: 300px;">
+                        <h3>Archivo de Video de Campo (Local)</h3>
+                        <video controls src="video/batalla.mp4" width="100%" height="280">Tu navegador no soporta video.</video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE DOCENTES CON RECORRIDO INTERACTIVO (JS) -->
+    <section class="teachers-section">
+        <div class="teachers-container">
+            
+            <div class="teachers-header">
+                <div>
+                    <span class="teachers-tag">¿QUIÉN DIRIGE LAS OPERACIONES MONARCH?</span>
+                    <h2>Nuestra Planta de Expertos en Titanes</h2>
+                    <p>Los investigadores de nuestra base son especialistas activos en monstruos gigantes. Utiliza los botones para recorrer el catálogo completo:</p>
+                </div>
+                <!-- Botones funcionales con IDs -->
+                <div class="teachers-nav-buttons">
+                    <button id="btn-prev" class="nav-btn">‹</button>
+                    <button id="btn-next" class="nav-btn">›</button>
+                </div>
+            </div>
+
+            <!-- Contenedor de las tarjetas de docentes (controlado por JS) -->
+            <div class="teachers-grid" id="teachers-track">
+                
+                <!-- Grupo 1 (Primeros 4 expertos) -->
+                <div class="teacher-card">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsxhodsrixg8meuri.public.blob.vercel-storage.com%2Ffandom-lore%2Fcharacters%2Fgodzilla-the-mummy%2Fdr-ishiro-serizawa-1377cded7990.jpg&f=1&nofb=1&ipt=54f9f0484229f8e770a0262b1cf158ccb2fc9b604a1b9efd4554f702e23d811d&ipo=images" alt="Dr. Ishiro Serizawa">
+                    <div class="teacher-info">
+                        <h3>Dr. Ishiro Serizawa</h3>
+                        <p>Especialista en Biología de Titanes y Energía Atómica en Monarch. Defensor del equilibrio natural.</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.usajacket.com%2Fwp-content%2Fuploads%2F2024%2F03%2FGodzilla-x-Kong-The-New-Empire-Ilene-Andrews-Jumpsuit-510x600.jpg&f=1&nofb=1&ipt=5929247ca77484ed1390248c8b156da77e2155be21268c9281f36fe7d0100342&ipo=images" alt="Dra. Ilene Brooks">
+                    <div class="teacher-info">
+                        <h3>Dra. Ilene Brooks</h3>
+                        <p>Especialista en Mitología de Monstruos y Sistemas de Alerta Temprana contra Kaijus.</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.justamericanjackets.com%2Fwp-content%2Fuploads%2F2019%2F07%2FGodzilla-King-of-the-Monsters-Kyle-Chandler-Green-Cotton-Jacket.jpg&f=1&nofb=1&ipt=d50eff5d174675c10ff64fd10b387088050d76145f8bcecb45f9fae675cb15ca&ipo=images" alt="Ing. Mark Russell">
+                    <div class="teacher-info">
+                        <h3>Ing. Mark Russell</h3>
+                        <p>Especialista en Ingenierías de Contención y Contramedidas de Armamento Anti-Titán.</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages3.cinefil.com%2Fstars%2F1125760.webp%3Fclass%3Dposterxl&f=1&nofb=1&ipt=c6944710823205515ac983935efc365b62ba32b1848bca66b93b9e2b46bd0685&ipo=images" alt="Dr. Rick Stanton">
+                    <div class="teacher-info">
+                        <h3>Dr. Rick Stanton</h3>
+                        <p>Especialista en Análisis Sísmico y Rastreo de Frecuencias de Emisión de los Kaijus.</p>
+                    </div>
+                </div>
+
+                <!-- Grupo 2 (Otros 4 expertos) -->
+                <div class="teacher-card">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages-wixmp-ed30a86b8c4ca887773594c2.wixmp.com%2Ff%2F1ea08e12-847b-4c43-8433-ff86b833fd7b%2Fdg4vkrd-66013fc9-6a73-4932-b682-66276b9942fa.jpg%2Fv1%2Ffit%2Fw_375%2Ch_303%2Cq_70%2Cstrp%2Fvivienne_graham__godzilla___by_blue_leader97_dg4vkrd-375w.jpg%3Ftoken%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAzNCIsInBhdGgiOiJcL2ZcLzFlYTA4ZTEyLTg0N2ItNGM0My04NDMzLWZmODZiODMzZmQ3YlwvZGc0dmtyZC02NjAxM2ZjOS02YTczLTQ5MzItYjY4Mi02NjI3NmI5OTQyZmEuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.NUSpBk6YtY4r3SVm8WoA8ZKt9VN2NlmKR_vmekLcT58&f=1&nofb=1&ipt=1ad174c186b8308583ff7a2d87ff0aa89b45b8468eb65cdf87d2c81c6aa87f72&ipo=images" alt="Dra. Vivienne Graham">
+                    <div class="teacher-info">
+                        <h3>Dra. Vivienne Graham</h3>
+                        <p>Especialista en Ecosistemas Prehistóricos y Conducta biológica del Alfa Godzilla.</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.dailymail.co.uk%2F1s%2F2019%2F05%2F26%2F21%2F13986990-7072921-image-a-23_1558901046550.jpg&f=1&nofb=1&ipt=1883d4bed577fee2b33e082a88a9fdf90fbdeeff62388e7399b7fcf80c25bead&ipo=images" alt="Cmdr. Madison Russell">
+                    <div class="teacher-info">
+                        <h3>Cmdr. Madison Russell</h3>
+                        <p>Experta en Redes de Comunicación de Emergencia Global y Enlace con Titanes.</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.lecentredart.org%2Fwp-content%2Fuploads%2F2022%2F04%2FIMG_1308-scaled-e1648821525657-1024x674.jpg&f=1&nofb=1&ipt=140357a792e34114dc4558d7c1251a6671f560485d67512d86dac5629fb4f6e8&ipo=images" alt="Dra. Yolanda Woods">
+                    <div class="teacher-info">
+                        <h3>Dra. Yolanda Woods</h3>
+                        <p>Coordinadora de Laboratorios de Radiación Alfa y Beta en la base central.</p>
+                    </div>
+                </div>
+
+                <div class="teacher-card">
+                    <img src="https://static.wikia.nocookie.net/doblaje/images/a/a7/KOTM_-_Stenz.jpg/revision/latest?cb=20240403152338&path-prefix=es" alt="William Stenz">
+                    <div class="teacher-info">
+                        <h3>William Stenz</h3>
+                        <p>Almirante del Ejercito de los Estados Unidos</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE DOS COLUMNAS CON FORMULARIO INTEGRADO -->
+    <section class="hero-section">
+        <div class="hero-container">
+            
+            <!-- Columna Izquierda: Textos y Beneficios -->
+            <div class="hero-text-side">
+                <span class="hero-tag">¡ALERTA MONARCH!</span>
+                <h1 class="hero-title-custom">¿Tienes dudas sobre los Titanes?</h1>
+                <p class="hero-desc-custom">
+                    Déjanos tus datos y el equipo Monarch se pondrá en contacto para informarte sobre las especialidades de defensa contra Kaijus.
+                </p>
+                
+                <div class="hero-subtitle-custom">
+                    Conoce todo sobre la iniciativa Monarch y Godzilla:
+                </div>
+                <div class="hero-benefits hero-benefits-column">
+                    <span>✓ Planes de estudio de contención y duración oficial</span>
+                    <span>✓ Costos de equipamiento y becas de investigación</span>
+                    <span>✓ Proceso de reclutamiento y requisitos de ingreso</span>
+                    <span>✓ Validez internacional Monarch y titulación directa</span>
+                </div>
+            </div>
+
+            <!-- Columna Derecha: Tarjeta Flotante con Formulario (10 campos/etiquetas) -->
+            <div class="hero-form-side">
+                <div class="cbtis-hero-form-card">
+                    
+                    <h3 class="form-card-title">
+                        Solicita informes Monarch
+                    </h3>
+
+                    <form id="form-hero-informes" action="#" method="POST">
+                        
+                        <!-- 1. Campo de Texto: Nombre -->
+                        <div class="cbtis-input-group form-group-margin">
+                            <input type="text" id="info_nombre" name="nombre" required placeholder="Nombre" class="form-control-input">
+                        </div>
+
+                        <!-- 2. Campo de Texto: Apellido -->
+                        <div class="cbtis-input-group form-group-margin">
+                            <input type="text" id="info_apellido" name="apellido" required placeholder="Apellido" class="form-control-input">
+                        </div>
+
+                        <!-- 3. Campo de Correo Electrónico -->
+                        <div class="cbtis-input-group form-group-margin">
+                            <input type="email" id="info_email" name="email" required placeholder="Correo electrónico" class="form-control-input">
+                        </div>
+
+                        <!-- 4. Campo de Teléfono -->
+                        <div class="cbtis-input-group form-group-margin">
+                            <input type="tel" id="info_telefono" name="telefono" required placeholder="Teléfono o WhatsApp de emergencia" class="form-control-input">
+                        </div>
+
+                        <!-- 5. Menú Desplegable (Select): Nivel de Estudios -->
+                        <div class="cbtis-input-group form-group-margin">
+                            <select id="info_nivel" name="nivel" required class="form-control-select">
+                                <option value="">Elige el nivel que deseas estudiar</option>
+                                <option value="media">Especialización Avanzada en Titanes</option>
+                            </select>
+                        </div>
+
+                        <!-- 6. Menú Desplegable (Select): Carrera Técnica -->
+                        <div class="cbtis-input-group form-group-margin">
+                            <select id="info_carrera" name="carrera" required class="form-control-select">
+                                <option value="">Elige tu especialidad de interés</option>
+                                <option value="recursos">Ingeniería en Contención de Titanes</option>
+                                <option value="programacion">Sistemas de Alerta Precoz y Radares Anti-Kaiju</option>
+                                <option value="ciberseguridad">Ciberdefensa contra Amenazas Gigantes</option>
+                                <option value="laboratorista">Biología de Radiación y Análisis Celular</option>
+                            </select>
+                        </div>
+
+                        <!-- 7. Campo de Fecha (Date): Fecha estimada de ingreso -->
+                        <div class="cbtis-input-group form-group-margin">
+                            <label for="info_fecha" class="form-date-label">Fecha estimada de ingreso:</label>
+                            <input type="date" id="info_fecha" name="fecha" required class="form-control-date">
+                        </div>
+
+                        <!-- 8. Área de Texto (Textarea): Dudas adicionales -->
+                        <div class="cbtis-input-group form-group-margin">
+                            <textarea id="info_comentarios" name="comentarios" rows="2" placeholder="Escribe tus dudas o comentarios..." class="form-control-textarea"></textarea>
+                        </div>
+
+                      <!-- 9. Casilla de Verificación (Checkbox): Términos y privacidad -->
+                        <div class="cbtis-input-group form-group-checkbox">
+                            <input type="checkbox" id="info_terminos" name="terminos" required class="form-checkbox-input">
+                            <label for="info_terminos" class="form-checkbox-label">
+                                Acepto recibir información y el protocolo de seguridad de Monarch.
+                            </label>
+                        </div>
+
+                        <!-- 10. Botón de Envío (Submit Button) -->
+                        <button type="submit" class="cbtis-btn-ingresar form-submit-btn">
+                            Solicitar informes
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CONVENIOS DOBLE LÍNEA -->
+    <section class="convenios-section">
+        <div class="convenios-container">
+            
+            <div class="section-header">
+                <span class="teachers-tag convenience-tag-custom">¿QUIÉNES CONFÍAN EN EL CBTis 166?</span>
+                <h2>Nuestros Convenios</h2>
+                <p>Grandes empresas e instituciones forman a sus colaboradores en nuestro plantel y contratan a nuestra comunidad egresada.</p>
+            </div>
+
+            <!-- LÍNEA 1: Se desplaza hacia la IZQUIERDA -->
+            <div class="marquee-wrapper">
+                <div class="marquee-track marquee-track-top">
+                   <!-- SECCIÓN DE CONVENIOS DOBLE LÍNEA -->
+    <section class="convenios-section">
+        <div class="convenios-container">
+            
+            <div class="section-header">
+                <span class="teachers-tag convenience-tag-custom">ALIADOS ESTRATÉGICOS DE MONARCH</span>
+                <h2>Organizaciones y Empresas Asociadas</h2>
+                <p>Corporaciones globales, agencias de defensa e instituciones científicas que colaboran en la contención e investigación de Titanes.</p>
+            </div>
+
+            <!-- LÍNEA 1: Se desplaza hacia la IZQUIERDA -->
+            <div class="marquee-wrapper">
+                <div class="marquee-track marquee-track-top">
+                    <div class="convenio-card">🌐 Monarch Industries</div>
+                    <div class="convenio-card">⚡ Apex Cybernetics</div>
+                    <div class="convenio-card">🔬 Serizawa Bio-Lab</div>
+                    <div class="convenio-card">🛡️ G-Force Defense</div>
+                    <div class="convenio-card">🛰️ Interpol Titan Division</div>
+                    <div class="convenio-card">⚙️ Shobijin Tech</div>
+                    <div class="convenio-card">🔋 Tatsuo Energy Corp</div>
+                    <div class="convenio-card">🚁 Global Defense Force</div>
+                    <!-- Duplicado para efecto infinito fluido -->
+                    <div class="convenio-card">🌐 Monarch Industries</div>
+                    <div class="convenio-card">⚡ Apex Cybernetics</div>
+                    <div class="convenio-card">🔬 Serizawa Bio-Lab</div>
+                    <div class="convenio-card">🛡️ G-Force Defense</div>
+                    <div class="convenio-card">🛰️ Interpol Titan Division</div>
+                    <div class="convenio-card">⚙️ Shobijin Tech</div>
+                    <div class="convenio-card">🔋 Tatsuo Energy Corp</div>
+                    <div class="convenio-card">🚁 Global Defense Force</div>
+                </div>
+            </div>
+
+            <!-- LÍNEA 2: Se desplaza hacia la DERECHA -->
+            <div class="marquee-wrapper marquee-wrapper-spacing">
+                <div class="marquee-track marquee-track-bottom">
+                    <div class="convenio-card">⚛️ O.X.A. Radiation Research</div>
+                    <div class="convenio-card">🚢 Pacific Fleet Command</div>
+                    <div class="convenio-card">🧪 Bio-Comounds Godzilla</div>
+                    <div class="convenio-card">📡 Skull Island Outpost 33</div>
+                    <div class="convenio-card">💻 Mechagodzilla Project</div>
+                    <div class="convenio-card">🗺️ Subterranean Hollow Earth</div>
+                    <div class="convenio-card">🚨 Seismic Alert Network</div>
+                    <div class="convenio-card">🏛️ World Security Council</div>
+                    <!-- Duplicado para efecto infinito fluido -->
+                    <div class="convenio-card">⚛️ O.X.A. Radiation Research</div>
+                    <div class="convenio-card">🚢 Pacific Fleet Command</div>
+                    <div class="convenio-card">🧪 Bio-Comounds Godzilla</div>
+                    <div class="convenio-card">📡 Skull Island Outpost 33</div>
+                    <div class="convenio-card">💻 Mechagodzilla Project</div>
+                    <div class="convenio-card">🗺️ Subterranean Hollow Earth</div>
+                    <div class="convenio-card">🚨 Seismic Alert Network</div>
+                    <div class="convenio-card">🏛️ World Security Council</div>
+                </div>
+            </div>
+        </div>
+    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA (FOOTER CON REDES SOCIALES) -->
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <div class="footer-info">
+                <p>Monarch Global Defense &copy; 2026</p>
+                <p class="footer-author">Desarrollado por: Pineda Flores Josias Antonio (5A PRO VESP)</p>
+            </div>
+
+            <!-- Enlaces de Redes Sociales -->
+            <div class="footer-socials">
+                <a href="https://facebook.com" target="_blank" class="social-icon" title="Facebook">f</a>
+                <a href="https://instagram.com" target="_blank" class="social-icon" title="Instagram">ig</a>
+                <a href="https://whatsapp.com" target="_blank" class="social-icon" title="WhatsApp">💬</a>
+                <a href="https://youtube.com" target="_blank" class="social-icon" title="YouTube"> ▶</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
